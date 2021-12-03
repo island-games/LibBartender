@@ -665,7 +665,7 @@ bool Bartender_UnlockTrophy(int trophyID)
 		{
 			char* tempKey = "";
 			
-			tempKey = Bartender_GetTrophyKey(listOfTrophies[trophyID])
+			tempKey = Bartender_GetTrophyKey(listOfTrophies[trophyID]);
 			
 			listOfTrophies[trophyID].trophyAcquired = true;
 			listOfTrophies[trophyID].unlockKey = Bartender_Encrypt(tempKey);
